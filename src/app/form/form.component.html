@@ -1,10 +1,16 @@
 <form>
     <div>
-        <input>
+        <input type="number" [(ngModel)]="num1" name="num1">
         <br>
-        <input>
+        <input type="number" [(ngModel)]="num2" name="num2">
         <br>
-        <button>Somar</button>
-        <label></label>
+        <button (click)="onClickSom()">+</button>
+        <button (click)="onClickSub()">-</button>
+        <button (click)="onClickDiv()">/</button>
+        <button (click)="onClickMul()">x</button>
+        <button (click)="onClickQua()">^2</button>
+        <button (click)="onClickCub()">^4</button>
+        <br>
+        <label>{{sum}}</label>
     </div>
 </form>
